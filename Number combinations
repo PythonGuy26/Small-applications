@@ -1,0 +1,12 @@
+"""
+An application that prints all combinations of numbers between two tuples
+"""
+def mult_tuple(tuple1, tuple2):
+    lists = []
+    for number in tuple1:
+        for number_2 in tuple2:
+            lists.append((number, number_2))
+    for num in tuple2:
+        for num2 in tuple1:
+            lists.append((num, num2))
+    return lists
