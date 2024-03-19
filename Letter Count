@@ -1,0 +1,12 @@
+"""
+An application that calculates how many times each letter appears in the text
+"""
+def count_chars(my_str):
+    dic = {}
+    for letter in my_str:
+        num = my_str.count(letter)
+        if letter in dic.keys():
+            continue
+        else:
+            dic[letter] = num
+    return dic
