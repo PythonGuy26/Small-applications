@@ -1,0 +1,13 @@
+"""
+An app that detects palindromes
+"""
+word = input("Enter:")
+backword_word = word[::-1] # היפוך של המילה
+backword_word = backword_word.replace(" ", "")
+backword_word = backword_word.lower()
+word = word.lower()
+word = word.replace(" ", "")
+if word == backword_word:
+    print("yes")
+else:
+    print("No")
