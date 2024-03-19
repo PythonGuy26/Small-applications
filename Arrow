@@ -1,0 +1,15 @@
+"""
+An application that creates an arrow from a selected mark
+"""
+def arrow(my_char, max_length):
+    num_list = []
+    x = 1
+    while x < max_length:
+        num_list.append(x)
+        x += 1
+    while x > 0:
+        num_list.append(x)
+        x -= 1
+    for i in num_list:
+        print(my_char * i)
+arrow("->", 100)
