@@ -1,0 +1,14 @@
+"""
+Conversion calculator between degrees Celsius and Fahrenheit
+"""
+heat = input("Insert the temperature you would like to convert:")
+if heat.endswith("F") or heat.endswith("f"):
+    heat = heat[:-1]
+    heat = float(heat)
+    celsius = (heat * 5 - 160) / 9
+    print(celsius, "C")
+else:
+    heat = heat[:-1]
+    heat = float(heat)
+    fahrenheit = (heat * 9 + (32 * 5)) / 5
+    print(fahrenheit, "F")
