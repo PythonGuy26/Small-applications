@@ -1,5 +1,10 @@
 """
-An application that creates an arrow from a selected mark
+An application that creates an arrow from a selected mark like this:
+*
+**
+***
+**
+*
 """
 def arrow(my_char, max_length):
     num_list = []
