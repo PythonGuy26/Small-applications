@@ -37,5 +37,5 @@ while True:                # the game begin
         elif user_try != str(running_number):
             break
 print("You survived", attempts, "attempts, well down!!")
-x = input("press Exit")
+exit = input("press Exit:")
 
